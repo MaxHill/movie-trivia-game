@@ -12,7 +12,9 @@ export const makeGuessAction = () => (dispatch, getState) => {
 }
 
 export const newRoundAction = () => dispatch => {
-    const movies = database().movies;
+    const movies = database().movies
+        .sort(() => 0.5 - Math.random()) // Shuffle array
+        .slice(0, 4); // Take first 4 from array
     const question = movies[Math.floor(Math.random() * movies.length)];
 
     dispatch({
