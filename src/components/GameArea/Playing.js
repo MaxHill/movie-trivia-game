@@ -58,6 +58,7 @@ class Playing extends Component {
 }
 
 const Container = styled.div`
+    padding-top: 3.5rem;
     width: 95%;
     @media (min-width: 760px) {
         width: 90%;

@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
 export const Title = styled.h1`
+    font-size: 1.5em;
     font-weight: 100;
     text-align: center;
+
+    @media (min-width: 760px) {
+        font-size: 2em;
+    }
 `;
 
 export const Strong = styled.span`

@@ -31,6 +31,9 @@ const Box = styled.div`
             top: 0;
             left: 0;
             right: 0;
+            background: #efefef;
+
+            background: linear-gradient(to bottom, #efefef, rgba(0, 0, 0, 0));
         `;
 
 const SpaceBetween = styled.div`
